@@ -1,0 +1,68 @@
+
+[
+    {
+        "thumbName" : "editor_cancel",
+        "bigName" : "",
+        "isPro": false
+    },
+    {
+        "thumbName" : "frame_1",
+        "bigName" : "frame_1_big",
+        "isPro": false
+    },
+    {
+        "thumbName" : "frame_2",
+        "bigName" : "frame_2_big",
+        "isPro": false
+    },
+    {
+        "thumbName" : "frame_3",
+        "bigName" : "frame_3_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "frame_4",
+        "bigName" : "frame_4_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "frame_5",
+        "bigName" : "frame_5_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "frame_6",
+        "bigName" : "frame_6_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "frame_7",
+        "bigName" : "frame_7_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "frame_8",
+        "bigName" : "frame_8_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "frame_9",
+        "bigName" : "frame_9_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "frame_10",
+        "bigName" : "frame_10_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "frame_11",
+        "bigName" : "frame_11_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "frame_12",
+        "bigName" : "frame_12_big",
+        "isPro": true
+    }
+]

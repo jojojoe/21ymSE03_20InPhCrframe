@@ -1,0 +1,63 @@
+
+[
+    {
+        "thumbName" : "sticker_1",
+        "bigName" : "sticker_1_big",
+        "isPro": false
+    },
+    {
+        "thumbName" : "sticker_2",
+        "bigName" : "sticker_2_big",
+        "isPro": false
+    },
+    {
+        "thumbName" : "sticker_3",
+        "bigName" : "sticker_3_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "sticker_4",
+        "bigName" : "sticker_4_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "sticker_5",
+        "bigName" : "sticker_5_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "sticker_6",
+        "bigName" : "sticker_6_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "sticker_7",
+        "bigName" : "sticker_7_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "sticker_8",
+        "bigName" : "sticker_8_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "sticker_9",
+        "bigName" : "sticker_9_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "sticker_10",
+        "bigName" : "sticker_10_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "sticker_11",
+        "bigName" : "sticker_11_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "sticker_12",
+        "bigName" : "sticker_12_big",
+        "isPro": true
+    }
+]

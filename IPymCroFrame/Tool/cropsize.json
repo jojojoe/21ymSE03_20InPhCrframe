@@ -1,0 +1,38 @@
+
+[
+    {
+        "thumbName" : "crop_7",
+        "bigName" : "Original",
+        "isPro": false
+    },
+    {
+        "thumbName" : "crop_1",
+        "bigName" : "1:1",
+        "isPro": false
+    },
+    {
+        "thumbName" : "crop_2",
+        "bigName" : "2:3",
+        "isPro": false
+    },
+    {
+        "thumbName" : "crop_3",
+        "bigName" : "3:5",
+        "isPro": true
+    },
+    {
+        "thumbName" : "crop_4",
+        "bigName" : "3:4",
+        "isPro": true
+    },
+    {
+        "thumbName" : "crop_5",
+        "bigName" : "5:7",
+        "isPro": true
+    },
+    {
+        "thumbName" : "crop_6",
+        "bigName" : "9:16",
+        "isPro": true
+    }
+]

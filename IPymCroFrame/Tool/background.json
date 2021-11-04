@@ -1,0 +1,83 @@
+
+[
+    {
+        "thumbName" : "color_1",
+        "bigName" : "color_1_big",
+        "isPro": false
+    },
+    {
+        "thumbName" : "color_2",
+        "bigName" : "color_2_big",
+        "isPro": false
+    },
+    {
+        "thumbName" : "color_3",
+        "bigName" : "color_3_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "color_4",
+        "bigName" : "color_4_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "color_5",
+        "bigName" : "color_5_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "color_6",
+        "bigName" : "color_6_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "color_7",
+        "bigName" : "color_7_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "color_8",
+        "bigName" : "color_8_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "color_9",
+        "bigName" : "color_9_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "color_10",
+        "bigName" : "color_10_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "color_11",
+        "bigName" : "color_11_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "color_12",
+        "bigName" : "color_12_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "color_13",
+        "bigName" : "color_13_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "color_14",
+        "bigName" : "color_14_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "color_15",
+        "bigName" : "color_15_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "color_16",
+        "bigName" : "color_16_big",
+        "isPro": true
+    }
+]

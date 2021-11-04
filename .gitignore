@@ -1,0 +1,7 @@
+IPymCroFrame.xcodeproj/xcuserdata/
+IPymCroFrame.xcworkspace/
+Pods/
+*.swp
+Podfile.lock
+.DS_Store
+IPymCroFrame.xcodeproj/project.xcworkspace/xcuserdata/

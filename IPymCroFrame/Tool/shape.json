@@ -1,0 +1,69 @@
+
+
+[
+    {
+        "thumbName" : "editor_cancel",
+        "bigName" : "",
+        "isPro": false
+    },
+    {
+        "thumbName" : "Shape_1",
+        "bigName" : "Shape_1_big",
+        "isPro": false
+    },
+    {
+        "thumbName" : "Shape_2",
+        "bigName" : "Shape_2_big",
+        "isPro": false
+    },
+    {
+        "thumbName" : "Shape_3",
+        "bigName" : "Shape_3_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "Shape_4",
+        "bigName" : "Shape_4_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "Shape_5",
+        "bigName" : "Shape_5_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "Shape_6",
+        "bigName" : "Shape_6_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "Shape_7",
+        "bigName" : "Shape_7_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "Shape_8",
+        "bigName" : "Shape_8_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "Shape_9",
+        "bigName" : "Shape_9_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "Shape_11",
+        "bigName" : "Shape_11_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "Shape_12",
+        "bigName" : "Shape_12_big",
+        "isPro": true
+    },
+    {
+        "thumbName" : "Shape_1-1",
+        "bigName" : "Shape_1_big-1",
+        "isPro": true
+    }
+]
