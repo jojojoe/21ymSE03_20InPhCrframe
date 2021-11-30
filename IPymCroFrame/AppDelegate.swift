@@ -11,7 +11,7 @@ import AppTrackingTransparency
 
 //com.cropic.frameking
 
-let AppName: String = "Vision Pic"
+let AppName: String = "Effect Booster"
 let purchaseUrl = ""
 let TermsofuseURLStr = "https://www.app-privacy-policy.com/live.php?token=wsiJtnuMyskiojqmuSrQnY2K7js9gWrk"
 let PrivacyPolicyURLStr = "http://thirsty-structure.surge.sh/Facial_Privacy_Policy.html"

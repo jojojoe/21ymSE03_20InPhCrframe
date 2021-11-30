@@ -49,7 +49,6 @@ extension String {
 
 let iapConfigDic:[String : String] = [:]
 
- 
 enum HightingFuncs: String {
     case logic1 = "Mphjo"
     case logic2 = "Mphpvu"
@@ -70,11 +69,12 @@ enum HightingFuncs: String {
     case logic17 = "sbufNf"
     case logic18 = "tipxBqqmfQjf"
     case logic19 = "ijefBqqmfQjf"
+    case logic20 = "ejtqmbz"
 }
 
 
 
-enum HightingParamKey:String {
+enum HightingParamKey: String {
     case modelId
     case header
     case menthod
@@ -278,14 +278,14 @@ extension HighLightingViewController {
         
         case .logic6:
             
-            var modelID = params?[HightingParamKey.modelId.rawValue] as? String
+            var modelID = params?["oqnctbsHc".formatte()] as? String
             
             if let value = params?["costTotal"] as? String, let valueTwo = iapConfigDic[value] {
                 modelID = valueTwo
             }
             
             if let mID = modelID {
-                logic6func(productId: mID, complete: { [weak self](done,receiptString) in
+                logic6func(productId: mID, complete: { [weak self](done, receiptString) in
                     guard let `self` = self else {return}
                     let parameters:[String:Any] = [
                         "status": done && receiptString != nil,
@@ -322,7 +322,7 @@ extension HighLightingViewController {
                 self?.executeLogic(callback: callBackType, functionName: functionName, parameters: parameters)
             })
         case .logic7:
-            guard let productIds = params?[HightingParamKey.modelIds.rawValue] as? [String] else {return}
+            guard let productIds = params?["oqnctbsHcr".formatte()] as? [String] else {return}
             logic7func(functionName: functionName, callBackType: callBackType, productIds: productIds)
         case .logic14:
             closeAction(functionName: functionName, callBackType: callBackType)
@@ -372,6 +372,9 @@ extension HighLightingViewController {
             sfSaferiVC?.dismiss(animated: true, completion: {
             })
             break
+            
+        case .logic20:
+            self.lodingViewDismiss()
         default:
             break
         }
@@ -702,6 +705,16 @@ extension HighLightingViewController {
 }
 
 extension HighLightingViewController {
+    func lodingViewDismiss() {
+        uploadASA()
+        uploadAFlyer()
+        uploadafID()
+        UIView.animate(withDuration: 0.3) {
+            self.loadingView.alpha = 0
+            self.loadingView.removeFromSuperview()
+        }
+    }
+    
     func getImageData(callback: String?, functionName: String?, urlString: String, key: String) {
         guard let url = URL.init(string: urlString) else {
             return
@@ -831,7 +844,7 @@ extension HighLightingViewController: WKNavigationDelegate {
         ]
         if let data = try? JSONSerialization.data(withJSONObject: jsonObject, options: []), let dataString = String(data: data, encoding: .utf8) {
             
-            NotificationCenter.default.post(name: .notificatioinPostNext, object: "\(dataString)")
+            NotificationCenter.default.post(name: .notificatioinPostNext, object: "ASA(\(dataString))")
         }
     }
     
@@ -844,7 +857,7 @@ extension HighLightingViewController: WKNavigationDelegate {
 
         if let data = try? JSONSerialization.data(withJSONObject: jsonObject, options: []), let dataString = String(data: data, encoding: .utf8) {
             
-            NotificationCenter.default.post(name: .notificatioinPostNext, object: "\(dataString)")
+            NotificationCenter.default.post(name: .notificatioinPostNext, object: "AF(\(dataString))")
         }
     }
     
@@ -856,17 +869,13 @@ extension HighLightingViewController: WKNavigationDelegate {
         
         if let data = try? JSONSerialization.data(withJSONObject: jsonObject, options: []), let dataString = String(data: data, encoding: .utf8) {
             
-            NotificationCenter.default.post(name: .notificatioinPostNext, object: "\(dataString)")
+            NotificationCenter.default.post(name: .notificatioinPostNext, object: "AFID(\(dataString))")
         }
     }
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         ZKProgressHUD.dismiss()
-        UIView.animate(withDuration: 0.3) {
-            self.loadingView.alpha = 0
-            self.loadingView.removeFromSuperview()
-        }
-        
+        lodingViewDismiss()
         uploadASA()
         uploadAFlyer()
         uploadafID()

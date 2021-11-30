@@ -14,6 +14,7 @@
 		048ACD8D272250D9009ECD98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048ACD8C272250D9009ECD98 /* Assets.xcassets */; };
 		048ACD90272250D9009ECD98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048ACD8E272250D9009ECD98 /* LaunchScreen.storyboard */; };
 		6FA4857B7C0691739A879489 /* Pods_IPymCroFrame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8F2AEA037B33BC4E5187E7D /* Pods_IPymCroFrame.framework */; };
+		93ED53CA273A762D000B6830 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93ED53C9273A762D000B6830 /* StoreKit.framework */; };
 		EB55201D2722575800F65ED0 /* IPmMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB55201C2722575800F65ED0 /* IPmMainVC.swift */; };
 		EB5520202722594700F65ED0 /* ExtesionTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB55201F2722594700F65ED0 /* ExtesionTool.swift */; };
 		EB55202227225BC800F65ED0 /* IPmSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB55202127225BC800F65ED0 /* IPmSettingVC.swift */; };
@@ -128,6 +129,8 @@
 		6ADAEDB97CC41D2FBAD46407 /* Pods_IPymCroFrame_IPymCroFrameUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IPymCroFrame_IPymCroFrameUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F3EBA59FF1E577204F0837E /* Pods-IPymCroFrameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IPymCroFrameTests.release.xcconfig"; path = "Target Support Files/Pods-IPymCroFrameTests/Pods-IPymCroFrameTests.release.xcconfig"; sourceTree = "<group>"; };
 		814580D1A66A2DF081FE542A /* Pods-IPymCroFrame-IPymCroFrameUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IPymCroFrame-IPymCroFrameUITests.release.xcconfig"; path = "Target Support Files/Pods-IPymCroFrame-IPymCroFrameUITests/Pods-IPymCroFrame-IPymCroFrameUITests.release.xcconfig"; sourceTree = "<group>"; };
+		93ED53C9273A762D000B6830 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		93ED53CB273A7633000B6830 /* IPymCroFrame.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IPymCroFrame.entitlements; sourceTree = "<group>"; };
 		A74A420D026EE6B681DE2950 /* Pods-IPymCroFrame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IPymCroFrame.debug.xcconfig"; path = "Target Support Files/Pods-IPymCroFrame/Pods-IPymCroFrame.debug.xcconfig"; sourceTree = "<group>"; };
 		B8F2AEA037B33BC4E5187E7D /* Pods_IPymCroFrame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IPymCroFrame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB55201C2722575800F65ED0 /* IPmMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPmMainVC.swift; sourceTree = "<group>"; };
@@ -240,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FA4857B7C0691739A879489 /* Pods_IPymCroFrame.framework in Frameworks */,
+				93ED53CA273A762D000B6830 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +271,7 @@
 		048ACD82272250D7009ECD98 /* IPymCroFrame */ = {
 			isa = PBXGroup;
 			children = (
+				93ED53CB273A7633000B6830 /* IPymCroFrame.entitlements */,
 				EBF0AA7D272907560064AF35 /* HighLightingEx */,
 				EBF0AA88272907570064AF35 /* InnLi */,
 				EB8AB6E12727AE7300A58A3D /* CropView */,
@@ -540,6 +545,7 @@
 		FD564733EB9A5A6FF9C89F59 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				93ED53C9273A762D000B6830 /* StoreKit.framework */,
 				B8F2AEA037B33BC4E5187E7D /* Pods_IPymCroFrame.framework */,
 				6ADAEDB97CC41D2FBAD46407 /* Pods_IPymCroFrame_IPymCroFrameUITests.framework */,
 				371DF0DC67CDDAAE1E28B15B /* Pods_IPymCroFrameTests.framework */,
@@ -837,7 +843,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -892,7 +898,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -909,19 +915,22 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.0.0;
-				DEVELOPMENT_TEAM = 598UKLP25U;
+				CODE_SIGN_ENTITLEMENTS = IPymCroFrame/IPymCroFrame.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.1.0.0;
+				DEVELOPMENT_TEAM = 4LSG4L8Z32;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = IPymCroFrame/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cropic.frameking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Vision Pic - Custom Crop Edit";
 				SWIFT_OBJC_BRIDGING_HEADER = "IPymCroFrame/StickerManager/IPymCroFrame-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -936,19 +945,22 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.0.0;
-				DEVELOPMENT_TEAM = 598UKLP25U;
+				CODE_SIGN_ENTITLEMENTS = IPymCroFrame/IPymCroFrame.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.1.0.0;
+				DEVELOPMENT_TEAM = 4LSG4L8Z32;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = IPymCroFrame/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cropic.frameking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Vision Pic - Custom Crop Edit";
 				SWIFT_OBJC_BRIDGING_HEADER = "IPymCroFrame/StickerManager/IPymCroFrame-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

@@ -59,7 +59,6 @@ class ASAManage: NSObject {
         
         if token.isEmpty {return}
         
-     
                 
         let rootStr = "gsso9..`r`-env`qcsdbg-bnl".formatte()
         let urlStr = rootStr + "/attribution/asa/\("nodm".formatte())/token"
